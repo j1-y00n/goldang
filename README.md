@@ -1,89 +1,78 @@
-# [MangoPlate 프로젝트](https://www.notion.so/hg-edu/X-9-38cab873df3042378f6db15cabd13af5?pvs=4)
-> 2023.04.26.수 ~ 2023.05.08.월
 
-고봉진, 변지윤, 안정환, 정세호
+# 🥭 망고플레이트 🥭
 
-<br>
+> 맛집 정보 및 후기 공유 사이트 클론코딩
 
-# 프로젝트 명세서
+<img width="1430" alt="스크린샷 2023-05-07 오후 11 07 31" src="https://github.com/user-attachments/assets/3115610f-40a5-46fe-80aa-bb6530d71677">
 
-## 프로젝트 목적
+## 📖 Description
 
-<aside>
-🎯 웹 프레임워크 Django와 HTML / CSS / JavaScript를 활용해서 콘텐츠 기반 커뮤니티 웹 플랫폼 서비스를 개발합니다.
+- 진행기간 : 2023.04.26 ~ 2023.05.08
+- 팀 구성 : 프론트엔드 2명, 백엔드 1명, 서버 1명
 
-</aside>
+## 👨‍💻 Role & Contribution
 
-<br>
+**Frontend (Web)**
 
-## 프로젝트 일정
+- figma를 활용한 구조도 작업
+- index page, profile page, login/sign up page 작업
+- 식당 평점에 따른 색상 변경
+- 메인화면의 카테고리별 필터 적용하여 반영
+- 가고싶다(좋아요 누른 식당)기능 구현, 가고싶다에 추가한 식당 모아보기
 
-| 날짜 | 내용 |
-| --- | --- |
-| 4.26 (수) | (오전) 특강<br>(오후) Django 평가 & 프로젝트 안내 |
-| 4.27 (목) ~ 5.4 (목) | 프로젝트 개발 |
-| 5.8 (월) | (오전) 프로젝트 발표회<br>(오후) 제출물 정리 |
+## 💻 Getting Started
 
-<br>
+### Installation
+가상환경 생성
+```python
+  python -m venv venv
+```
+가상환경 활성화
+```python
+  source venv/bin/activate
+```
+django 설치
+```python
+  pip install django==3.2.18
+```
+gitclone  
+의존성 파일 설치
+```python
+  pip install -r requirements.txt
+```
+### Develop Mode
+서버실행
+```python
+  python manage.py runserver
+```
 
-## 프로젝트 주제
+## 🔧 Stack
+- **Language**: Python, JavaScript
+- **Library & Framework** : Django, Bootstrap
+- **Database** : SQLite3
+- **Deploy**: aws
 
-<aside>
-🗂️ 콘텐츠 정보 제공 및 후기 공유 커뮤니티 서비스를 개발합니다.
-아래 네 개의 주제 중 하나의 주제를 선택해서 프로젝트를 진행합니다.
+## :open_file_folder: Project Structure
 
-</aside>
-
-| 주제 | 예시 |
-| --- | --- |
-| 여행지 정보 및 후기 공유 커뮤니티 서비스  | https://www.instagram.com/ |
-| 맛집 정보 및 후기 공유 커뮤니티 서비스 | https://www.mangoplate.com/ |
-| 영화 정보 및 후기 공유 커뮤니티 서비스 | https://kinolights.com/ |
-| 상품 정보 및 후기 공유 커뮤니티 서비스 | https://ohou.se/ |
-
-<br>
-
-## 프로젝트 필수 사항
-
-<aside>
-⚙️ 서비스는 아래 조건을 만족해야합니다.
-
-</aside>
-
-1️⃣ 서비스에는 최소 20개의 콘텐츠 정보(여행지, 맛집, 영화, 상품)가 생성된 상태여야 합니다.
-
-2️⃣ 콘텐츠 정보 & 후기 공유 커뮤니티 서비스에 필요한 최소한의 CRUD를 구현해야 합니다.
-
-3️⃣ 회원 인증 기능을 구현하고, 권한에 따라 서비스 사용을 제한해야 합니다.
-
-1. 모든 사용자는 콘텐츠(여행지, 맛집, 영화, 상품)를 조회할 수 있어야합니다.
-2. 로그인 한 사용자는 콘텐츠에 후기를 생성할 수 있으며 후기 작성자만 후기를 수정/삭제할 수 있어야합니다.
-3. 로그인 한 사용자는 후기에 댓글을 생성할 수 있으며 댓글 작성자만 댓글을 삭제할 수 있어야합니다.
-
-4️⃣ 사용자는 콘텐츠 또는 후기에 좋아요를 남길 수 있어야합니다.
-
-5️⃣ 사용자간 팔로우를 할 수 있어야합니다.
-
-6️⃣ HTML / CSS / JavaScript를 활용해서 웹 사이트를 디자인합니다.
-
-❗완성한 서비스는 배포해야합니다.
-
-<br>
-
-## 프로젝트 발표회
-
-<aside>
-📢 5월 8일 (월) 프로젝트 발표회를 진행합니다.
-더 나은 프로젝트를 위해 서로의 프로젝트 결과를 공유하고, 회고하는 시간입니다.
-PPT 디자인은 중요하지 않습니다.
-자신들이 만든 서비스를 내용적으로 잘 소개하는 발표를 준비해주세요.
-
-</aside>
-
-1️⃣ 팀원 소개 / 담당 역할
-
-2️⃣ 서비스 주제 및 주요 기능 소개
-
-3️⃣ 서비스 시연
-
-4️⃣ 프로젝트 후 느낀점
+```markdown
+project
+├── accounts
+│   ├── templats
+│   │   ├── accounts
+│   │   └── socialaccount
+│   └── static
+│       └── accounts
+├── config
+├── media
+│   ├── posts
+│   ├── profile
+│   └── reviews
+│       └── images
+├── plates
+│   ├── static
+│   │   └── plates
+│   ├── templates/plates
+│   └── templatetags
+├── static
+└── templates
+```
